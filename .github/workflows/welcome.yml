@@ -1,0 +1,16 @@
+name: time for test
+on: push
+jobs:
+  Build my Projects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the current repo
+        uses: actions/checkout@v3
+      - name: setup node js
+        uses: actions/setup-node@v3
+      - name: Installing Dependecies and making build
+        run: |
+          npm install
+          npm run build
+      - name: all works finished!
+        run: echo "every things done!"
