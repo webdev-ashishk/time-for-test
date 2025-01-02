@@ -1,7 +1,7 @@
 name: time for test
 on: push
 jobs:
-  Build my Projects:
+  Build-my-Projects:
     runs-on: ubuntu-latest
     steps:
       - name: clone the current repo
