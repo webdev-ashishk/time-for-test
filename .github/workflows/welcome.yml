@@ -14,5 +14,7 @@ jobs:
           npm run build
       - name: checking nodejs versions
         run: node -v
+      - name: Running Test
+        run: npm run test
       - name: all works finished!
         run: echo "every things done!"
